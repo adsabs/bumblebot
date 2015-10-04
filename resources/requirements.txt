@@ -1,2 +1,3 @@
 slackclient
 err
+boto3

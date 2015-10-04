@@ -1,6 +1,4 @@
-# Dockerizing Elasticsearch:
-# Dockerfile for building elasticsearch on an ubuntu machine
-# Elasticsearch will listen on port 9200 for web traffic:
+# Dockerizing ErrBot:
 
 # OS to use
 FROM phusion/baseimage
@@ -10,7 +8,8 @@ FROM phusion/baseimage
 RUN apt-get update \
   && apt-get -y install --no-install-recommends \
          python3-pip \
-         python3-openssl
+         python3-openssl \
+         git
 
 ## Install ErrBot
 RUN mkdir -p /opt/errbot/data
